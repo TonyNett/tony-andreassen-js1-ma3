@@ -8,7 +8,13 @@ async function getData() {
 
   const answer = await response.json();
 
-  console.log(answer.results);
+  const facts = answer.results;
+
+  for(let i = 0; i < facts.length; i++) {
+    console.log(facts[i].name);
+  }
+
+
 }
 
 
