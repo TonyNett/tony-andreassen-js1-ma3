@@ -19,8 +19,7 @@ async function getData() {
   for(let i = 0; i < facts.length; i++) {
     
     html += `${facts[i].name}
-    ${facts[i].rating}
-    ${facts[i].tags.length}
+    ${facts[i].rating}    
     `
             
     
