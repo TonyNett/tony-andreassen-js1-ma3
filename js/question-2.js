@@ -25,7 +25,7 @@ async function getData() {
     
     console.log(html);
 
-    if (i === 7) {
+    if (i === 8) {
       break;
     }
 
