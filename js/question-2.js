@@ -12,16 +12,23 @@ async function getData() {
 
   const facts = answer.results;
 
-  displayContainer.innerHTML = "";
+  // displayContainer.innerHTML = "";
 
   let html = "";
 
   for(let i = 0; i < facts.length; i++) {
     
-    html += `${facts[i].name}
-    ${facts[i].rating}    
-    `
-            
+    // html += `${facts[i].name}
+    // ${facts[i].rating}    
+    // `
+        
+    html +=
+`<div>
+   <h2>${facts[i].name}</h2>
+   <p>Rating: ${facts[i].rating} </p>
+   <p>Number of tags: ${facts[i].tags.length} </p>
+</div>
+`
     
     console.log(html);
 
